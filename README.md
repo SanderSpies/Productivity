@@ -1,7 +1,7 @@
 Productivity
 ============
 
-A guide for optimal Front End productivity. Note that is especially targetted towards Single Page Applications.
+Based on my personal experiences.
 
 What causes slow downs in FE productivity?
 ---
@@ -14,15 +14,19 @@ What causes slow downs in FE productivity?
 - Not using different layers of abstraction
 - MVC in general is a bringer of pain
 
-  "Game engine" approach is better
+  "Game engine" approach is better in my experience.
 - Slow build environment
+
+  If it takes longer then 5 minutes to get your new environment up and running, you are doing it wrong.
 - No control over FE build environment
 - Being too nice when using JSHint or CSSLint
 - No time for refactoring
-- No proper components: CSS coupled to everything, elements, ids or attributes
-- Separation based on technology instead of features
+- CSS coupled to everything, elements, ids or attributes
+  
+  This can make refactoring rather hard, therefore: use only classes with prefixes. Max. depth level should be 3.
+- Separation based on technology instead of functionality
 - Wrong backend implementation: either by sending blocks of HTML or not proper REST
-- "Everybody can do everything" mentality
+- "Everybody can do everything" mentality without the proper architecture
 - Working against the language
 
 How to speed up FE productivity?
