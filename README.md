@@ -14,7 +14,8 @@ What causes slow downs in FE productivity?
   Also when calling functions, it should be clear what your intention is. The other developer shouldn't be guessing too much for your intentions. So don't write ``addNode('Honda', true, false, 1, 20)``, but write something like: ``addNode({label: 'Honda', hasChildren: true, alternateStyling: false, notifications: 1, nrOfChildren: 20})``
   
 - Wrong separation of concerns
-  The separation between views and templates are a wrong separation of concerns, and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. 
+  
+The separation between views and templates are a wrong separation of concerns, and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. 
 
 - Not using different layers of abstraction
 
