@@ -26,7 +26,8 @@ The separation between views and templates are a wrong separation of concerns, a
   "Game engine" approach is much better in my experience.
 - Slow build environment
 
-  If it takes longer then 5 minutes to get your new environment up and running, you are doing it wrong.
+  If it takes longer then 5 minutes to get your new environment up and running, you are doing it wrong. And during development changes should happen around a second. Why? Mental context switching occurs if the developer needs to wait too long.
+  
 - No control over FE build environment
 - Being too nice when using JSHint or CSSLint
 - No time for refactoring
@@ -37,6 +38,9 @@ The separation between views and templates are a wrong separation of concerns, a
 - Wrong backend implementation: either by sending blocks of HTML or not proper REST
 - "Everybody can do everything" mentality without the proper architecture
 - Working against the language
+- Developer mentality
+
+  Too often developers behave like factory workers, and keep on pushing code. A good developer dares to take a step back, and say: 
 
 How to speed up FE productivity?
 ---
