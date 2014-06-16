@@ -49,7 +49,7 @@ The separation between views and templates are a wrong separation of concerns, a
 
 - Developer mentality
 
-  Too often developers behave like factory workers, and keep on pushing code. A good developer dares to take a step back, and say: 
+  
 
 How to speed up FE productivity?
 ---
