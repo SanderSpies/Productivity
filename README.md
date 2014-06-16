@@ -30,7 +30,12 @@ The separation between views and templates are a wrong separation of concerns, a
   
 - No control over FE build environment
 - Being too nice when using JSHint or CSSLint
+
+  Try to run a tight ship when it comes to coding. 
 - No time for refactoring
+
+  Often architecture is done wrong in the beginning and organizations have the habit of continueing to build upon that architecture. Refactoring is a necessary evil, as developers are learning and experiencing what works best during the development process. Mistakes should be expected. Honesty is an important factor here also, by saying what works and doesn't.
+  
 - CSS coupled to everything, elements, ids or attributes
   
   This can make refactoring rather hard, therefore: use only classes with prefixes. Max. depth level should be 3.
@@ -38,6 +43,10 @@ The separation between views and templates are a wrong separation of concerns, a
 - Wrong backend implementation: either by sending blocks of HTML or not proper REST
 - "Everybody can do everything" mentality without the proper architecture
 - Working against the language
+
+   
+
+
 - Developer mentality
 
   Too often developers behave like factory workers, and keep on pushing code. A good developer dares to take a step back, and say: 
