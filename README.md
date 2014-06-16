@@ -1,7 +1,7 @@
 Productivity
 ============
 
-Based on my personal experiences.
+Based on my personal views and experiences.
 
 What causes slow downs in FE productivity?
 ---
