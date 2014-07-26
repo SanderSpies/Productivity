@@ -15,7 +15,7 @@ What causes slow downs in FE productivity?
   
 - Wrong separation of concerns
   
-  The separation between views and templates are a wrong separation of concerns, and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. 
+  The separation between views and templates is a wrong separation of concerns, and template languages and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. Note that within the current Reactjs solution, only HTML is merged into JS. CSS is still left outside of the component, while ideally it should be inside of the component (FB is [thinking of it](https://github.com/reactjs/react-future/blob/master/04%20-%20Layout/Inline%20Style%20Extension.md). 
 
 - Not using different layers of abstraction
 
@@ -38,10 +38,11 @@ What causes slow downs in FE productivity?
   
 - CSS coupled to everything, elements, ids or attributes
   
-  This can make refactoring rather hard, therefore: use only classes with prefixes. Max. depth level should be 3.
+  This can make refactoring rather hard, therefore: use only classes with prefixes. Max. depth level should be 3. More ideally the CSS should directly be part of the component, and not separated by technology.
 - Separation based on technology instead of functionality
 - Wrong backend implementation: either by sending blocks of HTML or not proper REST
-- "Everybody can do everything" mentality without the proper architecture
+- "Everybody can do everything" mentality without the proper architecture.
+  Every developer has a certain expertise, and everything isn't it. So let the developer be experts in their own area, and be guided in the right way in lesser known areas. A good architecture is vital here, but most likely isn't in place.
 - Working against the language
 
    
