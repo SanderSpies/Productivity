@@ -17,6 +17,8 @@ What causes slow downs in FE productivity?
   
   The separation between views and templates is a wrong separation of concerns, and template languages and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. Note that within the current Reactjs solution, only HTML is merged into JS. CSS is still left outside of the component, while ideally it should be inside of the component (FB is [thinking of it](https://github.com/reactjs/react-future/blob/master/04%20-%20Layout/Inline%20Style%20Extension.md). 
 
+And I did my own attempt of [fixing it](https://github.com/SanderSpies/IntegratedCSS).
+
 - Not using different layers of abstraction
 
   Logic in views, calling the back end from a view, handling user actions in views - can result into potential problems when refactoring. 
