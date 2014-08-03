@@ -42,14 +42,13 @@ And I did my own attempt of [fixing it](https://github.com/SanderSpies/Integrate
   
   This can make refactoring rather hard, therefore: use only classes with prefixes. Max. depth level should be 3. More ideally the CSS should directly be part of the component, and not separated by technology.
 - Separation based on technology instead of functionality
-- Wrong backend implementation: either by sending blocks of HTML or not proper REST
+- Wrong backend implementation: either by sending blocks of HTML or not proper REST.
+
+  The backend should write an API for the world, not just a certain use case. 
 - "Everybody can do everything" mentality without the proper architecture.
   Every developer has a certain expertise, and everything isn't it. So let the developer be experts in their own area, and be guided in the right way in lesser known areas. A good architecture is vital here, but most likely isn't in place.
+- Not understanding JavaScript or CSS or HTML
 - Working against the language
-
-   
-
-
 - Developer mentality
 
   
