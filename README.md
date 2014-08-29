@@ -15,9 +15,19 @@ What causes slow downs in FE productivity?
   
 - Wrong separation of concerns
   
-  The separation between views and templates is a wrong separation of concerns, and template languages and 2 way binding is a way to facilitate this already broken abstraction. Reactjs solved this in the correct way by ensuring there is no difference between views and templates. Note that within the current Reactjs solution, only HTML is merged into JS. CSS is still left outside of the component, while ideally it should be inside of the component (FB is [thinking of it](https://github.com/reactjs/react-future/blob/master/04%20-%20Layout/Inline%20Style%20Extension.md). 
+  The separation between views and templates is a wrong separation of concerns, and template languages and 2 way binding is a way to facilitate this already broken abstraction. React.js solved this in the correct way by ensuring there is no difference between views and templates. Note that within the current Reactjs solution, only HTML is merged into JS. CSS is still left outside of the component, while ideally it should be inside of the component (FB is [thinking of it](https://github.com/reactjs/react-future/blob/master/04%20-%20Layout/Inline%20Style%20Extension.md). 
 
-And I did my own attempt of [fixing it](https://github.com/SanderSpies/IntegratedCSS).
+And I did my own attempt of [fixing it](https://github.com/SanderSpies/react-style). Also note that I create a [all:initial polyfill](https://github.com/SanderSpies/all-initial) specifically for react-style  which disables css cascading from parent elements.
+
+- Using mutable objects models
+  
+  Although this is the current status quo in the Front End world, it comes with a set of problems. Versioning, undo, redo, etc. aren't easily possible with mutable objects. And doing this later is basically a no no. Also checking what has changed in a mutable model is a very cumbersome process.
+
+Instead you more likely want to do a change, easily jump back to a previous version or next version, do versioning, and even more important: you want to easily see what has changed. Hence you want to use immutable objects.
+
+Also you want to translate your business domain in the right way, which means the complete model with the relationships as you expect them. Not the simplistic models that for instance Backbone offers. 
+
+I did an attempt with [WorldState.js](https://github.com/SanderSpies/worldstate.js) to solve this, however I believe I will need to go back to the drawing board. The new idea is to generate an immutable model from SQL database metadata, probably using Facebook's [immutable-js](https://github.com/facebook/immutable-js). 
 
 - Not using different layers of abstraction
 
